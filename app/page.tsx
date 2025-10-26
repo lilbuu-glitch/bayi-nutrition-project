@@ -200,8 +200,52 @@ export default function HomePage() {
         </section>
 
         {/* Food Cards Section */}
-        <section className="py-20 px-6 bg-white pb-96">
-          <div className="max-w-6xl mx-auto">
+        <section className="py-20 px-6 bg-white pb-96 relative overflow-hidden">
+          {/* Floating Food Icons - Left Side (Zigzag Pattern) */}
+          <div className="hidden lg:block absolute left-4 top-20 space-y-12">
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)]" style={{ animation: 'zigzagLeft 5s ease-in-out infinite' }}>
+              🍼
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-16" style={{ animation: 'bouncyZigzag 6s ease-in-out infinite 0.5s' }}>
+              🥕
+            </div>
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-8" style={{ animation: 'spiral 7s ease-in-out infinite 1s' }}>
+              🍌
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-20" style={{ animation: 'zigzagLeft 5.5s ease-in-out infinite 1.5s' }}>
+              🥑
+            </div>
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-12" style={{ animation: 'bouncyZigzag 6.5s ease-in-out infinite 2s' }}>
+              🍎
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-6" style={{ animation: 'zigzagLeft 6s ease-in-out infinite 0.8s' }}>
+              🍊
+            </div>
+          </div>
+
+          {/* Floating Food Icons - Right Side (Zigzag Pattern) */}
+          <div className="hidden lg:block absolute right-4 top-20 space-y-12">
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] ml-auto" style={{ animation: 'zigzagRight 5.5s ease-in-out infinite 0.3s' }}>
+              🥦
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] mr-16" style={{ animation: 'spiral 6.5s ease-in-out infinite 1.2s' }}>
+              🍠
+            </div>
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] mr-8" style={{ animation: 'bouncyZigzag 7s ease-in-out infinite 0.7s' }}>
+              🥛
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] mr-20" style={{ animation: 'zigzagRight 6s ease-in-out infinite 2s' }}>
+              🍐
+            </div>
+            <div className="text-8xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] mr-12" style={{ animation: 'spiral 5s ease-in-out infinite 1.8s' }}>
+              🥣
+            </div>
+            <div className="text-7xl cursor-pointer filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)] mr-6" style={{ animation: 'bouncyZigzag 6.5s ease-in-out infinite 0.5s' }}>
+              🧃
+            </div>
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
                 Rekomendasi Makanan
